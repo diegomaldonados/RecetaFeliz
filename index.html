@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header container">
-      <a class="logo" href="#inicio">receta <em>feliz</em></a>
-    </header>
-
     <main>
       <section class="hero container" id="inicio">
         <div class="hero-copy">
@@ -22,14 +18,14 @@
           <h1>Recetas saludables para la lonchera, listas en menos de 15 minutos.</h1>
           <p class="lead">Recupera la calma de cada mañana con una guía digital pensada para dejar atrás la improvisación, la culpa y las ideas repetidas.</p>
 
-          <a class="button" href="#oferta">Quiero mi guía</a>
-
           <div class="hero-trust" aria-label="Beneficios rápidos">
             <span class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.35 4.76 5.25.76-3.8 3.7.9 5.24L12 14.98l-4.7 2.48.9-5.24-3.8-3.7 5.25-.76L12 3z"/></svg>Recetas saludables</span>
             <span class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v4l2.8 2.1M12 21a9 9 0 100-18 9 9 0 000 18z"/></svg>En menos de 15 min</span>
             <span class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7l4-3 4 3-4 3-4-3zm0 10l4-3 4 3-4 3-4-3zm8-10l4-3 4 3-4 3-4-3zm0 10l4-3 4 3-4 3-4-3z"/></svg>Fácil de preparar</span>
             <span class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg>Ingredientes económicos</span>
           </div>
+
+          <a class="button" href="#oferta">Quiero mi guía</a>
         </div>
 
         <div class="hero-art" aria-label="Mockup ilustrativo del ebook Receta Feliz">
@@ -143,16 +139,28 @@
 
         <div class="possibility-grid">
           <article class="possibility-card">
+            <button class="step-icon" type="button" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.4 5.4L20 10l-5.6 2.2L12 18l-2.4-5.8L4 10l5.6-2.6L12 2z"/></svg>
+            </button>
+            <span class="card-watermark">1</span>
             <span class="card-number">01</span>
             <h3>Abres la guía y eliges</h3>
             <p>Encuentras ideas listas sin perder tiempo navegando entre opciones confusas.</p>
           </article>
           <article class="possibility-card">
+            <button class="step-icon" type="button" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 8v4l2.8 2.1M12 21a9 9 0 100-18 9 9 0 000 18z"/></svg>
+            </button>
+            <span class="card-watermark">2</span>
             <span class="card-number">02</span>
             <h3>Preparas con menos esfuerzo</h3>
             <p>Sigues pasos sencillos, con ingredientes cotidianos y una lógica fácil de repetir.</p>
           </article>
           <article class="possibility-card">
+            <button class="step-icon" type="button" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 12h5l2-4 4 8 2-4h3"/></svg>
+            </button>
+            <span class="card-watermark">3</span>
             <span class="card-number">03</span>
             <h3>Sales de la repetición</h3>
             <p>La lonchera deja de verse igual cada semana y se siente más cuidada.</p>
@@ -165,6 +173,7 @@
           <div class="section-intro centered narrow">
             <p class="eyebrow">Imagínalo por un momento</p>
             <h2>Una semana más ligera empieza cuando ya no tienes que pensar tanto.</h2>
+            <p>Cuando la decisión deja de cargar sobre ti, la rutina se siente mucho más amable.</p>
           </div>
 
           <div class="benefit-stack">
@@ -209,7 +218,7 @@
               <li><strong>Ideas saludables y económicas</strong> con ingredientes cotidianos.</li>
               <li><strong>Variedad para la semana</strong> para salir de la repetición.</li>
               <li><strong>Guía digital en PDF</strong> para consultar cuando quieras.</li>
-              <li><strong>Acceso inmediato</strong> <small class="placeholder">[confirmar modalidad de entrega]</small>.</li>
+              <li><strong>Acceso inmediato</strong>.</li>
             </ul>
           </div>
         </div>
@@ -336,7 +345,7 @@
               <li>Guía en PDF con recetas rápidas y saludables.</li>
               <li>Ideas variadas para la semana escolar.</li>
               <li>Bonos digitales incluidos sin costo adicional.</li>
-              <li>Acceso inmediato <small class="placeholder">[confirmar entrega]</small>.</li>
+              <li>Acceso inmediato.</li>
             </ul>
           </div>
 
@@ -349,40 +358,8 @@
               <small>La oferta finaliza en</small>
               <strong><span id="minutes">10</span>:<span id="seconds">00</span></strong>
             </div>
-            <a class="button buy-button" href="#checkout-placeholder">Quiero mi guía</a>
+            <a class="button buy-button" href="#oferta">Quiero mi guía</a>
             <p class="safe">Compra segura · Guía digital · Acceso inmediato</p>
-            <p id="checkout-placeholder" class="checkout-note placeholder">[Añade aquí tu enlace de pago seguro antes de publicar]</p>
-          </div>
-        </div>
-
-        <div class="container value-offer">
-          <div class="value-copy">
-            <p class="eyebrow">Valor de la oferta</p>
-            <h3>Todo lo que recibes hoy, explicado de forma clara.</h3>
-          </div>
-
-          <div class="value-grid">
-            <article class="value-card">
-              <span class="value-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.4 9.4-8 10-4.6-.6-8-5-8-10V6l8-4z"/><path d="M8.5 12l2.4 2.4 4.6-5"/></svg>
-              </span>
-              <strong>Seguridad</strong>
-              <p>Compra protegida y un proceso sencillo para recibir tu acceso.</p>
-            </article>
-            <article class="value-card">
-              <span class="value-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l1.9 5.7H20l-4.7 3.4 1.8 5.9L12 14.7 6.9 17l1.8-5.9L4 7.7h6.1L12 2z"/></svg>
-              </span>
-              <strong>Practicidad</strong>
-              <p>Recetas pensadas para ayudarte a resolver sin perder tiempo.</p>
-            </article>
-            <article class="value-card">
-              <span class="value-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v4l2.8 2.1M12 21a9 9 0 100-18 9 9 0 000 18z"/></svg>
-              </span>
-              <strong>Tiempo</strong>
-              <p>Una ruta rápida para no seguir improvisando cada tarde.</p>
-            </article>
           </div>
         </div>
       </section>
@@ -422,7 +399,7 @@
             <h2>Preguntas frecuentes</h2>
           </div>
           <div class="faq-list">
-            <details open>
+            <details>
               <summary>¿Para qué edad son las recetas?<span>+</span></summary>
               <p>Están pensadas para niños y niñas entre 4 y 10 años. Ajusta porciones y alimentos según tus necesidades particulares.</p>
             </details>
@@ -496,7 +473,6 @@
           <p>© 2026 Receta Feliz · Todos los derechos reservados</p>
           <p class="disclaimer">Este material es educativo y no sustituye la orientación médica, nutricional o psicológica profesional.</p>
         </div>
-        <p class="placeholder">Creado por: [Nombre / marca]</p>
       </div>
     </footer>
 
