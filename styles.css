@@ -776,9 +776,9 @@ p{margin:0}
 }
 .price{
   margin-top:6px;
-  font-family:var(--serif);
+  font-family:var(--sans);
   font-size:clamp(68px,8vw,84px);
-  line-height:.85;
+  line-height:.65;
   letter-spacing:-.08em;
 }
 .price sup{
